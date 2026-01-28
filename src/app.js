@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser'
 
 import ENV from './lib/env.js'
 import authRoute from './routes/user.route.js'
+import dealRoute from './routes/deal.route.js'
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.get("/check", (req, res) => {
 });
 
 app.use('/api/auth/', authRoute)
+app.use('/api/deal/', dealRoute)
 
 app.use((err, req, res, next) => {
   console.log(err)
