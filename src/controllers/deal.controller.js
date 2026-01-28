@@ -1,5 +1,5 @@
-import { createDeal, findAllDeals, findDealById } from "../services/deal.service"
-import { validateCreate } from "../validators/deal.validators"
+import { createDeal, findAllDeals, findDealById } from "../services/deal.service.js"
+import { validateCreate } from "../validators/deal.validators.js"
 
 export const create = async (req, res, next) => {
   try {
